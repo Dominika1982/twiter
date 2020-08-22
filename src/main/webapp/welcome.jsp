@@ -1,21 +1,16 @@
-<%@ page import="java.time.LocalDateTime" %>
-Created by IntelliJ IDEA.
-  User: domin
-  Date: 22.08.2020
-  Time: 10:47
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" %>
 
+<%@ page contentType="text/html;charset=UTF-8" %>
+<jsp:useBean id="calculator" class="pl.sda.Calcultor" />
 <html>
 <head>
-    <title>local time</title>
+    <title>Podnoszenie do potęgi</title>
 </head>
 <body>
-<p><jsp:forward page="redirected.jsp"></jsp:forward>%>
-  <jsp:param name="myParmmy prameter" value=""/>
-  <jsp:forward page=""></jsp:forward>
-  </p>
+  5 <sup>2</sup> wynosi:
+<%
+  int squre = calculator.square(5);
+  out.print(squre);
+  %>
 
 
 </body>
