@@ -7,9 +7,9 @@
     <title>Podnoszenie do potęgi</title>
 </head>
 <body>
-  5 <sup>2</sup> wynosi:
+  <jsp:getProperty name="calculator" property="n"/> <sup>2</sup> wynosi:
 <%
-  int squre = calculator.square(5);
+  int squre = calculator.square();
   out.print(squre);
   %>
 
