@@ -1,5 +1,5 @@
-
-  Created by IntelliJ IDEA.
+<%@ page import="java.time.LocalDateTime" %>
+Created by IntelliJ IDEA.
   User: domin
   Date: 22.08.2020
   Time: 10:47
@@ -9,13 +9,13 @@
 
 <html>
 <head>
-    <title>Dyrektywy w JSP</title>
+    <title>local time</title>
 </head>
 <body>
-<p>Server name: ${pageContext.request.serverName}</p>
-<p>Server port: ${pageContext.request.serverPort}</p>
-<p>Request URI: ${pageContext.request.requestURI}</p>
+<p><%
+  LocalDateTime.now().toString()%>
+  </p>
 
-    </p>
+
 </body>
 </html>
