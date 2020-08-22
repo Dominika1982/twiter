@@ -12,6 +12,9 @@
 </head>
 <body>
 <p>Redirected Page</p>
-<jsp:forward page="redirected.jsp"></jsp:forward>
+<jsp:include page="included.jsp"/>
+<p>
+    Mój parametr to: <%= request.getParameter("myParam")%>
+</p>
 </body>
 </html>

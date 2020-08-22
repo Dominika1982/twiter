@@ -12,8 +12,9 @@ Created by IntelliJ IDEA.
     <title>local time</title>
 </head>
 <body>
-<p><%
-  LocalDateTime.now().toString()%>
+<p><jsp:forward page="redirected.jsp"></jsp:forward>%>
+  <jsp:param name="myParmmy prameter" value=""/>
+  <jsp:forward page=""></jsp:forward>
   </p>
 
 
